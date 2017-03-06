@@ -113,14 +113,16 @@ function initDanmaku(){
 }
 /*请求弹幕池*/
 function requestDanmaku() {
-	for(var i=0; i<511; i++){
+	if(gameSt.playing){
+		for(var i=0; i<511; i++){
+			if(document.getElementById("danmaku"+i).title==="1"){
+				document.getElementById("danmaku"+i).title = "2";
+				return i;
+			}
 
-		if(document.getElementById("danmaku"+i).title==="1"){
-			document.getElementById("danmaku"+i).title = "2";
-			return i;
 		}
-
 	}
+	
 }
 
 //初始化
@@ -218,7 +220,7 @@ function  BossDie() {
 
 //结束游戏
 function endGame(){
-    gameSt.playing = false;
+    gameSt.playing = gameSt.boss = false;
 
 	clearTimeout(timer.openFire);
 	alert("你的生命值被耗尽，游戏结束");
