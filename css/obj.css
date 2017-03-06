@@ -1,0 +1,83 @@
+#p_ship{
+    width:90px;
+    height: 90px;
+    background: url(../img/fighterAll.png) 0px 0px no-repeat;
+    position: absolute;
+    top: 300px;
+    left: 250px;
+    z-index: 10;
+}
+#p_spot{
+    margin: 37px 37px;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border: dotted 1px gray;
+    border-radius: 50%;
+    z-index: 100;
+    display:block;
+}
+#p_spot:after{
+    content: " ";
+    display: block;
+    width: 60px;
+    height: 60px;
+    border: dashed gray;border-radius: 50%;
+    position: relative;
+    top: -30px;
+    left: -28px;
+}
+
+.enemy1{
+    width: 60px;
+    height: 60px;
+    background: pink;
+    position: absolute;
+}
+
+.left{
+    background: url(../img/enemy1.png) no-repeat;
+}
+
+.right{
+    background: url(../img/enemy1.png) -60px 0px no-repeat;
+}
+
+.enemy2{
+    width: 60px;
+    height: 60px;
+    background: url(../img/enemy2.png) no-repeat;
+    position: absolute;
+}
+
+#theBoss{
+    width: 185px;
+    height: 208px;
+    background: url(../img/boss1.png) no-repeat;
+    position: absolute;
+    top: 85px;
+    z-index:5;
+
+}
+
+.damagedBoss{
+    background: url(../img/boss1dmg.png) no-repeat !important;
+}
+#bossHealthBar{
+    width: 200px;
+    height: 10px;
+    position: absolute;
+    top: 0;
+    left: -10px;
+    background: rgb(0,255,0);
+    display: block;
+}
+
+.bullet,.poolBlt{
+    width: 10px;
+    height: 10px;
+    background:red;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 100;
+}

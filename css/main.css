@@ -1,0 +1,188 @@
+body{
+    margin: 0;
+    padding: 0;
+    z-index: -1000;
+}
+section,p,aside{
+    margin: 0;padding: 0;
+    display: inline-block;
+    vertical-align: top;
+}
+aside{
+    width: 30%;
+}
+
+
+.gray{
+    border: 2px dashed #666;
+    color:#666;
+}
+.orange{
+
+    color: #f51;
+}
+.wdot{
+    border: dashed 1px gray;
+    color: #eee;
+}
+#gameScreen{
+    width: 600px;
+    height: 600px;
+    background: #336 url(../img/bg.png);
+    position: relative;
+    /*overflow: hidden;*/
+    z-index: 1;
+}
+
+#laser{
+    position: absolute;
+    width: 15px;
+    height: 600px;
+    background: transparent;
+    border: 2px #fff solid;
+    border-bottom: none;
+    left: 35px;
+    top: -560px;
+    display: none;
+}
+#hitCount{
+}
+.btn-style{
+    padding: 5px;
+    position: absolute;
+    font-weight: normal;
+    border:3px solid white;
+    color:white;
+    z-index: 1000;
+}
+.btn-style:hover{
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 0 15px 5px white;
+}
+.btn-style::selection {
+    background: none;
+}
+.btn-style::-moz-selection {
+    background: none;
+}
+
+.keySet{
+    text-align:left;
+    width: 70%;
+    border:2px solid transparent;
+}
+.keySet:hover{
+    cursor: default;
+    border-color: #fff;
+}
+.keySet::selection {
+    background: none;
+}
+.keySet::-moz-selection {
+    background: none;
+}
+.layout{
+    width: 600px;
+    height: 600px;
+    color: #ffffff;
+    position: absolute;
+    z-index: 100;
+}
+.layout1{
+    display: block;
+}
+.layout2{
+    display: none;
+}
+.selectDiff{
+    padding: 5px;
+    border:solid 2px transparent;
+}
+.selectDiff:hover{
+    cursor: pointer;
+    text-shadow: 0px 0px 3px #fff;
+}
+.layout3{
+    display: none;
+    width: 550px;
+    top: 10px;
+    left: 30px;
+
+}
+.howToPlay{
+    margin-top: 20px;
+}
+.currDifficult {
+    position: absolute;
+    top: 150px;
+    left: 220px;
+}
+#startBtn2{
+    top: 180px;
+    left: 220px;
+}
+#gameConfig{
+    top: 250px;
+    left: 220px;
+}
+#readme{top: 320px;
+    left:220px;
+}
+.returnMain {
+    top: 500px;
+    left: 450px;
+}
+#control{
+    position: absolute;
+    left: 50px;
+    top: 300px;
+    z-index: 1000;
+}
+/*弹窗样式*/
+.reveal-modal-bg {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    background: rgba(0,0,0,.8);
+    z-index: 100;
+    display: none;
+    top: 0;
+    left: 0;
+}
+
+.reveal-modal {
+    visibility: hidden;
+    top: 100px;
+    left: 50%;
+    margin-left: -300px;
+    width: 520px;
+    background: #eee url(modal-gloss.png) no-repeat -200px -80px;
+    position: absolute;
+    z-index: 101;
+    padding: 30px 40px 34px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: 0 0 10px rgba(0,0,0,.4);
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,.4);
+    -box-shadow: 0 0 10px rgba(0,0,0,.4);
+}
+
+.reveal-modal.small { width: 200px; margin-left: -140px;}
+.reveal-modal.medium { width: 400px; margin-left: -240px;}
+.reveal-modal.large { width: 600px; margin-left: -340px;}
+.reveal-modal.xlarge { width: 800px; margin-left: -440px;}
+
+.reveal-modal .close-reveal-modal {
+    font-size: 22px;
+    line-height: .5;
+    position: absolute;
+    top: 8px;
+    right: 11px;
+    color: #aaa;
+    text-shadow: 0 -1px 1px rbga(0,0,0,.6);
+    font-weight: bold;
+    cursor: pointer;
+}
