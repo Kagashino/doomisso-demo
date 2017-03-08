@@ -188,7 +188,7 @@ function gameProccess(){
 		}, 200)
 	}
 
-	//生成小怪
+	//生成BOSS
 	timer.releaseBoss = setTimeout(BossInSight,30000)
 
 
