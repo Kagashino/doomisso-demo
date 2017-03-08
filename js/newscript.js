@@ -236,9 +236,11 @@ function endGame(){
 	clearTimeout(timer.releaseBoss);
 	clearTimeout(bossAction);
 
+	for(item in timer){
+		timer[item]=null
+	}
 
-
-	timer.enemy2Creator = timer.enemyCreator = timer.overflowOperator = timer.general = timer.openFire = timer.releaseBoss = null;
+	//timer.enemy2Creator = timer.enemyCreator = timer.overflowOperator = timer.general = timer.openFire = timer.releaseBoss = null;
 
 	$('.enemy1,.enemy2,.bullet,#theBoss,.poolBlt').stop().remove();
 
