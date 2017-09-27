@@ -6,8 +6,8 @@
 终于把主逻辑弄完了!爽！
 
 How to play：
-1、Press arrow key to move, press shift move slowly, steadly, and the collision judge spot revealed （see3、）
-2、No need to handle firing
-3、A gray outer dashed circle around the flight, bullets in the circle will increase your score rapidly every tick, but be ware of collision between the spot and bullets;
+1、Press arrow key to move, press shift move slowly, steadly, and the collision judge spot revealed （see3、）  
+2、No need to handle firing  
+3、A gray outer dashed circle around the flight, bullets in the circle will increase your score rapidly every tick, but be ware of collision between the spot and bullets;  
 4、More functions developing
-5、good luck, have fun!
+5、good luck, have fun!  
